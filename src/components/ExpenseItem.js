@@ -4,7 +4,7 @@ import Card from './Card';
 
 import ExpenseDate from './ExpenseDate';
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   // const expenseDate = new Date(2022, 5, 7);
   // const expenseTitle = 'Car Insurance';
   // const expenseAmount = 294.67
