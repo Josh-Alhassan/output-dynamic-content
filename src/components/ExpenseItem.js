@@ -5,6 +5,10 @@ import Card from './Card';
 import ExpenseDate from './ExpenseDate';
 
 const ExpenseItem = (props) => {
+  // Button Event Handler function {}
+  const clickHandler = () => {
+    console.log('Button Clicked')
+  }
   // const expenseDate = new Date(2022, 5, 7);
   // const expenseTitle = 'Car Insurance';
   // const expenseAmount = 294.67
@@ -22,11 +26,12 @@ const ExpenseItem = (props) => {
       </div> */}
 
       <ExpenseDate date={props.date} />
-      <div>{props.date.toISOString()}</div>
+      {/* <div>{props.date.toISOString()}</div> */}
       <div className="expense-item__description">
         <h2>{props.title}</h2>
         <div className="expense-item__price">£ {props.amount}</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 }
