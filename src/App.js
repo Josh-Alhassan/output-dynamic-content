@@ -4,6 +4,9 @@ import './style.css';
 // import ExpenseItem from './components/ExpenseItem.js';
 import Expenses from './components/Expenses';
 
+// import NewExpense
+import NewExpense from './components/NewExpense/NewExpense';
+
 export default function App() {
   const expenses = [
     {
@@ -35,8 +38,9 @@ export default function App() {
   ];
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      {/* <h1>Hello StackBlitz!</h1>
+      <p>Start editing to see some magic happen :)</p> */}
+      <NewExpense />
 
       <Expenses expenses={expenses} />
     </div>
